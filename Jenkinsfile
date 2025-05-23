@@ -19,7 +19,7 @@ pipeline{
         stage('Build Image'){
             steps{
                 script{
-                    sh 'docker build -t kube-webapp .'
+                    sh 'docker build --no-cache -t kube-webapp .'
                 }
 
             }
