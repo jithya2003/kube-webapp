@@ -13,7 +13,7 @@ spec:
         app: kube-webapp
     spec:
       containers:
-        - name: nginx
+        - name: kube-webapp
           image: kube-webapp
           imagePullPolicy: Never
           ports:
