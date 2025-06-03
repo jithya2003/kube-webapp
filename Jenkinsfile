@@ -13,7 +13,7 @@ pipeline{
         stage('Test'){
             steps{
                 echo 'Checking files'
-                sh 'ls index.html styles.css'
+                sh 'ls index.html style.css'
             }
         }
         stage('Build Image'){

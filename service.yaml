@@ -4,9 +4,9 @@ metadata:
   name: kube-webapp
 spec:
   type: NodePort
+  selector:
+    app: kube-webapp
   ports:
     - port: 80
       targetPort: 80
       nodePort: 30010
-  selector:
-    app: kube-webapp
